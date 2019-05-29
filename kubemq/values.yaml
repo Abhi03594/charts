@@ -8,7 +8,8 @@ image:
   tag: latest
   pullPolicy: Always
 service:
-  type: ClusterIP
+  type: LoadBalancer
+  loadBalancerIP: ""
   apiPort: 8080
   restPort: 9090
   grpcPort: 50000
